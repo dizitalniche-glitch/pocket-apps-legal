@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket Cell – Privacy Policy</title>
+<style>
+  :root { --bg: #F7F5F0; --text: #1B211D; --muted: #46504A; --accent: #2F6A49; --line: #DEDACF; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1512; --text: #E8EDE9; --muted: #A5B0A9; --accent: #7FBF98; --line: #25302A; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; font-weight: 700; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 18px; margin: 32px 0 8px; color: var(--accent); }
+  p, li { color: var(--muted); }
+  .date { margin: 0 0 24px; font-size: 14px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; color: var(--muted); }
+  th { color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+<h1>Pocket Cell – Privacy Policy</h1>
+<p class="date">Effective date: 8 November 2026 (app version 1.0.0 and later)</p>
+
+<p>This policy explains how the Android app <strong>Pocket Cell: Minimal Sheet</strong>
+(package <code>com.pocketapps.pocket_cell</code>), published by <strong>Digital Dignitas</strong>
+("we"), handles information.</p>
+
+<h2>Summary</h2>
+<p>You can use Pocket Cell without an account: your spreadsheets stay on your device and are not sent to us.
+If you choose to create an account, we store your email and name. If you choose to send a file to another
+Pocket Cell user, a temporary copy of that file is stored on our cloud service until the other person accepts,
+declines or the invitation expires. The free version shows ads from Google AdMob, and the optional Pocket Cell
+Pro subscription is sold through Google Play.</p>
+
+<h2>Information stored only on your device</h2>
+<p>Your files (sheets, cells, formulas, formatting), your settings (language, theme, font, compact view) and
+whether Pro is active are stored on your device. Importing an Excel or CSV file reads it on your device; the
+file is not uploaded. Exported files are saved to a location you choose on your device. Uninstalling the app or
+clearing its data in Android settings deletes this information.</p>
+
+<h2>Account (optional)</h2>
+<p>If you sign in with email and password or with Google, we use <strong>Firebase Authentication</strong>
+(Google) and store: your email address, your display name, whether your email is verified, and the date the
+account was created. We never see or store your password. Only verified email addresses can receive files, so
+that nobody can receive files by registering someone else's email.</p>
+
+<h2>Sending a file to another user (optional)</h2>
+<p>When you use "Send file to a Pocket Cell user", the following is processed on Google Cloud / Firebase
+(Firestore, Cloud Storage and Cloud Functions, region asia-southeast1, Singapore):</p>
+<table>
+  <tr><th>Data</th><th>Purpose</th><th>Kept</th></tr>
+  <tr><td>File content (compressed copy of the file you send)</td><td>Delivering the file to the recipient</td>
+      <td>Until accepted, declined, withdrawn or 14 days. After acceptance the copy is deleted within 3 days.</td></tr>
+  <tr><td>Invitation record: sender and recipient name and email, file name, size, your message, status, dates</td>
+      <td>Showing invitations and their status to both people</td><td>Until about 30 days after the invitation is closed, then deleted automatically</td></tr>
+  <tr><td>Notification "accepted / declined" for the sender</td><td>Telling the sender what happened</td><td>About 30 days</td></tr>
+  <tr><td>Email lookup entry (verified email → account)</td><td>Finding the recipient; never readable by other users</td><td>While the account exists</td></tr>
+  <tr><td>Send counter (how many invitations in the last hour)</td><td>Preventing abuse</td><td>While the account exists</td></tr>
+</table>
+<p>When you accept a file, it is saved as your own copy on your device. The app always replies to a send request
+in the same way whether or not the email address belongs to a user, so email addresses cannot be probed.
+Do not send files containing information you are not allowed to share.</p>
+
+<h2>Advertising</h2>
+<p>The free version shows banner ads using <strong>Google AdMob</strong>. To show and measure ads and to
+prevent fraud, Google and its advertising partners may collect and process: your device's advertising ID, IP
+address (and the approximate location derived from it), device and app information (model, operating system,
+language, app version), and how you interact with ads. Depending on your consent and location, ads may be
+personalized.</p>
+<p>In the European Economic Area, the United Kingdom, Switzerland and other regions where the law requires it,
+the app asks for your consent before personalized ads are shown, using Google's consent tool. You can change
+your choice at any time in the app's settings, and reset or delete your advertising ID in Android settings.
+Pocket Cell Pro turns off ads.</p>
+<p>Google's policies: <a href="https://policies.google.com/technologies/partner-sites">How Google uses
+information from apps that use its services</a>, <a href="https://policies.google.com/privacy">Google
+Privacy Policy</a>.</p>
+
+<h2>Subscriptions</h2>
+<p>Pocket Cell Pro is sold as an auto-renewing subscription through <strong>Google Play</strong>. We never see
+your payment details. Google Play tells the app which plan is active so it can unlock Pro features. You can
+cancel at any time in Google Play → Payments &amp; subscriptions.</p>
+
+<h2>Your choices and deleting your data</h2>
+<ul>
+  <li>You can use the app without an account.</li>
+  <li><strong>Delete your account:</strong> in the app go to Me → Delete account. This deletes your account,
+      profile, invitations you sent or received, notifications, the email lookup entry and any file copies still
+      stored. Files on your own device are not affected; delete them in the app.</li>
+  <li>If you cannot use the app, email us from the address of your account and we will delete the data for you.</li>
+  <li>Files you already sent and the recipient accepted are copies on the recipient's device; we cannot delete
+      them from there.</li>
+</ul>
+
+<h2>Permissions</h2>
+<p>The app uses internet access (accounts, sharing, ads, purchases), the advertising ID permission and Google
+Play Billing. Files are opened and saved through Android's own file picker. It does not request location,
+camera, microphone or contacts.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
+
+<h2>Changes to this policy</h2>
+<p>We will update this page and its effective date before releasing a version that handles data differently.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests about this policy: <a href="mailto:dizitalniche@gmail.com">dizitalniche@gmail.com</a></p>
+
+<hr>
+
+<h1 lang="vi">Chính sách quyền riêng tư</h1>
+<div lang="vi">
+<p class="date">Có hiệu lực từ: 08/11/2026 (phiên bản 1.0.0 trở đi)</p>
+<p>Chính sách này giải thích cách ứng dụng Android <strong>Pocket Cell: Minimal Sheet</strong>
+(gói <code>com.pocketapps.pocket_cell</code>) do <strong>Digital Dignitas</strong> phát hành xử lý thông tin.</p>
+
+<h2>Tóm tắt</h2>
+<p>Bạn dùng Pocket Cell được mà không cần tài khoản: bảng tính nằm trên máy và không gửi cho chúng tôi. Nếu bạn
+tạo tài khoản, chúng tôi lưu email và tên. Nếu bạn chọn gửi file cho người dùng Pocket Cell khác, một bản sao
+tạm thời của file được lưu trên dịch vụ đám mây cho đến khi người kia nhận, từ chối hoặc lời mời hết hạn.
+Bản miễn phí hiển thị quảng cáo Google AdMob; gói Pocket Cell Pro tuỳ chọn bán qua Google Play.</p>
+
+<h2>Thông tin chỉ lưu trên thiết bị</h2>
+<p>File của bạn (sheet, ô, công thức, định dạng), cài đặt (ngôn ngữ, giao diện, phông chữ, chế độ gọn) và trạng
+thái Pro được lưu trên máy. Khi nhập file Excel hoặc CSV, file được đọc ngay trên máy và không tải lên. File
+xuất ra được lưu vào nơi bạn chọn trên máy. Gỡ ứng dụng hoặc xoá dữ liệu ứng dụng trong Cài đặt Android sẽ xoá
+các thông tin này.</p>
+
+<h2>Tài khoản (tuỳ chọn)</h2>
+<p>Nếu bạn đăng nhập bằng email và mật khẩu hoặc bằng Google, chúng tôi dùng <strong>Firebase Authentication</strong>
+(Google) và lưu: địa chỉ email, tên hiển thị, trạng thái đã xác minh email và ngày tạo tài khoản. Chúng tôi không
+thấy và không lưu mật khẩu của bạn. Chỉ email đã xác minh mới nhận được file, để không ai nhận file bằng cách
+đăng ký email của người khác.</p>
+
+<h2>Gửi file cho người dùng khác (tuỳ chọn)</h2>
+<p>Khi bạn dùng "Gửi file cho người dùng Pocket Cell", các dữ liệu sau được xử lý trên Google Cloud / Firebase
+(Firestore, Cloud Storage, Cloud Functions, khu vực asia-southeast1, Singapore):</p>
+<table>
+  <tr><th>Dữ liệu</th><th>Mục đích</th><th>Thời gian lưu</th></tr>
+  <tr><td>Nội dung file (bản sao nén của file bạn gửi)</td><td>Chuyển file đến người nhận</td>
+      <td>Đến khi được nhận, từ chối, thu hồi hoặc 14 ngày. Sau khi nhận, bản sao bị xoá trong vòng 3 ngày.</td></tr>
+  <tr><td>Bản ghi lời mời: tên và email người gửi/nhận, tên file, dung lượng, lời nhắn, trạng thái, ngày giờ</td>
+      <td>Hiển thị lời mời và trạng thái cho hai bên</td><td>Khoảng 30 ngày sau khi lời mời đóng, rồi tự xoá</td></tr>
+  <tr><td>Thông báo "đã nhận / từ chối" cho người gửi</td><td>Báo cho người gửi biết kết quả</td><td>Khoảng 30 ngày</td></tr>
+  <tr><td>Mục tra cứu email (email đã xác minh → tài khoản)</td><td>Tìm người nhận; người dùng khác không đọc được</td><td>Khi tài khoản còn tồn tại</td></tr>
+  <tr><td>Bộ đếm số lời mời gửi trong giờ qua</td><td>Chống lạm dụng</td><td>Khi tài khoản còn tồn tại</td></tr>
+</table>
+<p>Khi bạn nhận một file, nó được lưu thành bản sao riêng trên máy bạn. Ứng dụng luôn trả lời yêu cầu gửi theo
+cùng một cách dù email có thuộc về người dùng hay không, nên không thể dò email. Đừng gửi file chứa thông tin
+mà bạn không được phép chia sẻ.</p>
+
+<h2>Quảng cáo</h2>
+<p>Bản miễn phí hiển thị quảng cáo banner qua <strong>Google AdMob</strong>. Để hiển thị, đo lường và chống
+gian lận, Google và đối tác quảng cáo có thể thu thập: mã nhận dạng quảng cáo, địa chỉ IP (và vị trí gần đúng suy
+ra từ đó), thông tin thiết bị và ứng dụng, cách bạn tương tác với quảng cáo. Tuỳ sự đồng ý và khu vực, quảng
+cáo có thể được cá nhân hoá.</p>
+<p>Ở Khu vực Kinh tế Châu Âu, Vương quốc Anh, Thụy Sĩ và nơi luật yêu cầu, ứng dụng hỏi sự đồng ý trước khi hiển
+thị quảng cáo cá nhân hoá. Bạn đổi lựa chọn bất cứ lúc nào trong cài đặt của ứng dụng, và đặt lại/xoá mã nhận
+dạng quảng cáo trong Cài đặt Android. Pocket Cell Pro tắt quảng cáo.</p>
+
+<h2>Gói đăng ký</h2>
+<p>Pocket Cell Pro là gói đăng ký tự gia hạn qua <strong>Google Play</strong>. Chúng tôi không thấy thông tin
+thanh toán của bạn. Google Play cho ứng dụng biết gói nào đang hoạt động để mở tính năng Pro. Bạn huỷ bất cứ
+lúc nào trong Google Play → Thanh toán và gói thuê bao.</p>
+
+<h2>Lựa chọn của bạn và xoá dữ liệu</h2>
+<ul>
+  <li>Bạn dùng ứng dụng được mà không cần tài khoản.</li>
+  <li><strong>Xoá tài khoản:</strong> trong ứng dụng vào Tôi → Xoá tài khoản. Việc này xoá tài khoản, hồ sơ, các
+      lời mời đã gửi/nhận, thông báo, mục tra cứu email và mọi bản sao file còn lưu. File trên máy bạn không bị
+      ảnh hưởng; hãy xoá chúng trong ứng dụng.</li>
+  <li>Nếu không dùng được ứng dụng, hãy email cho chúng tôi từ địa chỉ của tài khoản để được xoá dữ liệu.</li>
+  <li>File đã gửi và được người nhận chấp nhận là bản sao trên máy người nhận; chúng tôi không xoá được từ đó.</li>
+</ul>
+
+<h2>Quyền</h2>
+<p>Ứng dụng dùng quyền internet (tài khoản, chia sẻ, quảng cáo, mua hàng), quyền mã nhận dạng quảng cáo và Google
+Play Billing. File được mở và lưu qua trình chọn file của Android. Không xin quyền vị trí, camera, micro hay danh bạ.</p>
+
+<h2>Trẻ em</h2>
+<p>Ứng dụng không hướng tới trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập dữ liệu của trẻ em.</p>
+
+<h2>Thay đổi</h2>
+<p>Chúng tôi sẽ cập nhật trang này và ngày hiệu lực trước khi phát hành phiên bản xử lý dữ liệu khác đi.</p>
+
+<h2>Liên hệ</h2>
+<p><a href="mailto:dizitalniche@gmail.com">dizitalniche@gmail.com</a></p>
+</div>
+</main>
+</body>
+</html>
